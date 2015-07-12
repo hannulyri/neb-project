@@ -106,6 +106,6 @@ Because of lack of time, I only test controllers. Controller inputs, outputs and
 
 Tests that I totally disregarded were testing services, repositories, models, DTO etc...
 
-### Error Handling 
+### Exception Handling 
 
-Error handling was much more easy to do using java 8's Optional-class (https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html). A great new feature!
+Exception handling was much more easy to do using java 8's Optional-class (https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html). A great new feature!
