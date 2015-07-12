@@ -1,11 +1,15 @@
 Neb-project
 
-A relatively simple and RESTful work example done by me in which I've used Java 8, Spring Boot, JPA, HATEOAS, Spring Security, RestTemplate, MySQL and Liquibase.
+A relatively simple and RESTful work example done by me in which I've used Java 8, Maven, Spring Boot, JPA, HATEOAS, Spring Security, RestTemplate, MySQL and Liquibase.
 
 The example is divided into two sections which both need to be running.
 * Nebhistory: userhistory
 * Nebusers: userdata, spring security login, login here will send historymessage about login/logout to nebhistory
 
+Requirements:
+* Java 8
+* MySQL
+* Maven
 
 Installation
 
@@ -23,7 +27,7 @@ Starting up
 # open console 1
 
 # Go to the nebhistory directory
-cd neb/nebhistory
+cd neb-project/nebhistory
 
 # Start the application
 mvn spring-boot:run
@@ -31,7 +35,7 @@ mvn spring-boot:run
 # open console 2
 
 # Go to the nebusers directory
-cd neb/nebusers
+cd neb-project/nebusers
 
 # Start the application
 mvn spring-boot:run
