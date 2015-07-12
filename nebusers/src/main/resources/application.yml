@@ -1,0 +1,21 @@
+server:
+    port: 8050
+    
+spring:
+    datasource:
+        dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+        url: jdbc:mysql://localhost:3306/neb?useUnicode=true&characterEncoding=utf8
+        username: root
+        password: test 
+
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLInnoDBDialect
+        database: MYSQL
+        show_sql: true
+        hibernate:
+            ddl-auto: validate
+            naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+
+liquibase.change-log: classpath:config/liquibase/master.xml
+nebistory.history.url: http://localhost:8080/api/history
+
