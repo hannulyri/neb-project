@@ -89,7 +89,7 @@ Date: Sun, 12 Jul 2015 12:03:38 GMT
 Logout (get Set-Cookie from login above):  
 `curl -i --cookie "JSESSIONID=72D8352F335A1C617EFE93A00C458E87; Path=/; HttpOnly" http://localhost:8050/api/logout`
 
-Fetch history from nebusers with resttemplate:  
+Fetch userhistory from Nebhistory with resttemplate:  
 `curl http://localhost:8050/api/users/1/history`
 
 Update user:  
@@ -100,9 +100,9 @@ Delete user:
 
 ### Testing
 
-Both Nebhistory and Nebusers have their own integrationtests, which can run with `mvn test` in their own directories. 
+Both Nebhistory and Nebusers have their own integrationtests, which can be run with `mvn test` in their own directories. 
 
-Because lack of time, I only test controllers. Inputs, outputs and HTTP-codes returned. Even with controllers I didn't test any of the HATEOAS-features, like self links, pagination etc...
+Because of lack of time, I only test controllers. Controller inputs, outputs and HTTP-codes returned. Even with controllers I didn't test any of the HATEOAS-features, like self links, pagination etc...
 
 Tests that I totally disregarded were testing services, repositories, models, DTO etc...
 
