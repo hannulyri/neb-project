@@ -9,7 +9,7 @@ The example is divided into two sections which both need to be running.
 Requirements:
 * Java 8
 * MySQL
-* Maven
+* Maven 3.3.3
 
 Installation
 

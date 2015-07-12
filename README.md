@@ -9,7 +9,7 @@ A relatively simple and RESTful work example done by me in which I've used Java 
 #### Requirements:
 * Java 8
 * MySQL
-* Maven
+* Maven 3.3.3
 
 ### Installation
 
