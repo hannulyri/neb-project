@@ -42,13 +42,13 @@ cd neb-project/nebusers
 mvn spring-boot:run
 ```
 
-### Testing REST
+### API REST
 
 When both applications are running, you can start testing. You find frontpages below. Nebusers port is 8050, nebhistory 8080.
 * Nebhistory => [http://localhost:8080/](http://localhost:8080/)
 * Nebusers => [http://localhost:8050/](http://localhost:8050/)
 
-#### Testing Nebhistory
+#### API Nebhistory
 
 Adding historymessage:  
 `curl -i -X POST -H "Content-Type: application/json" -d '{"userId": 1,"message":"Hello World!"}' http://localhost:8080/api/history`
@@ -59,7 +59,7 @@ Get historymessage:
 Delete historymessage:  
 `curl -i -X DELETE http://localhost:8080/api/history/1`
 
-#### Testing Nebusers
+#### API Nebusers
 
 Adding user:  
 `curl -i -X POST -H "Content-Type: application/json" -d '{"login": "foologin","password": "foopassword","firstName": "foofirstname","lastName": "foolastname","email": "foo@mail.com"}' http://localhost:8050/api/users`
