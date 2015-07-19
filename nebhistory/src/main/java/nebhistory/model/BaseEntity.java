@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.Version;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.Type;
@@ -19,6 +20,9 @@ public abstract class BaseEntity implements Serializable {
     @Type(type = "org.jadira.usertype.dateandtime.joda.PersistentDateTime")
     @Column(name = "created_date", nullable = false)
     private DateTime createdDate = DateTime.now();
+	
+	@Version
+    private long version;		
 
     public DateTime getCreatedDate() {
         return createdDate;
@@ -27,4 +31,8 @@ public abstract class BaseEntity implements Serializable {
     public void setCreatedDate(DateTime createdDate) {
         this.createdDate = createdDate;
     }
+    
+    public long getVersion() {
+        return version;
+    }      
 }

@@ -18,9 +18,9 @@ import org.springframework.boot.context.embedded.ServletContextInitializer;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class WebConfigurer implements ServletContextInitializer, EmbeddedServletContainerCustomizer {
+public class WebConfiguration implements ServletContextInitializer, EmbeddedServletContainerCustomizer {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(WebConfigurer.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(WebConfiguration.class);
 
     @Override
     public void customize(ConfigurableEmbeddedServletContainer container) {
